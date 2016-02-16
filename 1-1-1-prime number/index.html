@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+<p>题目：编写一个JavaScript函数，判断一个整数是否是素数，如果是，返回true，否则，返回false。</p>
+<p>解读：除了1和它本身以外不再有其他的因数。根据算术基本定理，每一个比1大的整数，要么本身是一个质数，要么可以写成一系列质数的乘积，最小的质数是2。</p>
+<p>基本判断思路：
+
+在一般领域，对正整数n，如果用2到根号n之间的所有整数去除，均无法整除，则n为质数。
+质数大于等于2 不能被它本身和1以外的数整除</p>
+<input id="checkNum" type="text" placeholder="请输入整数">
+
+<button id="checkBtn">结果</button>
+<p id="answer"></p>
+	<script src="script.js"></script>
+</body>
+</html>
