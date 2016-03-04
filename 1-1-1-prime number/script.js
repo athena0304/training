@@ -1,16 +1,22 @@
-function checkIsPrime(testNum){
-	if(testNum == 1) return false;
-	for(var i=2;i<parseInt(Math.sqrt(testNum));i++){
-		if(testNum%i == 0){
+function IsPrime(testNum){
+	if(testNum < 2) return false;
+	var len = Math.sqrt(testNum);
+	for(var i=2;i<=len;i++){
+		if(testNum % i === 0){
 			return false;
 		}
 	}
 	return true;
 }
-console.log(checkIsPrime(43))
+console.log(IsPrime(4))
+
+
+
+
+
 
 $("#checkBtn").click(function(){
-	if(checkIsPrime($("#checkNum").val())){
+	if(IsPrime($("#checkNum").val())){
 		$("#answer").text("true");
 	} else{
 		$("#answer").text("false");
