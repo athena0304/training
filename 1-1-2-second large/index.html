@@ -8,8 +8,8 @@
 </head>
 <body>
 <p>题目：编写一个JavaScript函数，对给定的一个数组，找出其中第二大的元素。</p>
-<p>解读：方法一：可以先对数组里的数进行排序，然后找到第二个位置的数就可以了</p>
-	<p>方法二：有两个数，first和second，初始值都设为负无穷大(-Infinity)遍历整个数组，如果当前数组数比first大，那么就替换first，first这个数给second，如果当前数比fist小比second大，那么就替换second。这样就保持first永远是当前最大值，second永远是当前第二大的值</p>
+<p>解读：方法一：有两个数，first和second，初始值都设为负无穷大(-Infinity)。遍历整个数组，如果当前数组数比first大，那么就替换first，first这个数给second，如果当前数比fist小比second大，那么就替换second。这样就保持first永远是当前最大值，second永远是当前第二大的值</p>
+	<p>方法二：可以先对数组里的数进行排序，然后再去重，那么剩下的数组的第二个数肯定就是第二大的了，相比于上一种方法，第三大、第四大也都ok，其实就是一个去重排序的过程啊</p>
 
 	<script src="script.js"></script>
 </body>
